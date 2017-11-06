@@ -41,12 +41,13 @@ public class EnemyHealth : MonoBehaviour {
 
 	void Death(){
 
+		Destroy (gameObject.transform.parent.gameObject);
+		Instantiate (enemyDeathFX, transform.position, transform.rotation);
+
 		if(dropsItem){
 
 			Instantiate (itemDrop, transform.position, transform.rotation);
 		}
-		Destroy (gameObject);
-		Instantiate (enemyDeathFX, transform.position, transform.rotation);
 	}
 }
 

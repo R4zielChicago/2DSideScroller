@@ -11,13 +11,13 @@ public class PlayerHealth : MonoBehaviour {
 	public GameObject deathFX;
 
 	PlayerController pController;
-
+	Animator anim;
 
 	//Hud Variables
 	public Slider healthSlider;
 	public Image damageScreen;
 
-	bool damaged = false;
+	public bool damaged = false;
 	Color damagedColor = new Color (0f,0f,0f,.5f);
 	float smoothColor = 5f;
 
@@ -26,6 +26,7 @@ public class PlayerHealth : MonoBehaviour {
 		healthSlider.maxValue = maxHealth;
 		healthSlider.value = maxHealth;
 		currentHealth = maxHealth;
+		anim = GetComponentInChildren<Animator> ();
 
 
 		pController = GetComponent<PlayerController> ();
@@ -40,6 +41,7 @@ public class PlayerHealth : MonoBehaviour {
 
 		}
 		damaged = false;
+		anim.SetBool ("Damaged", damaged);
 	}
 
 	public void addDamage(float damage){
@@ -49,6 +51,7 @@ public class PlayerHealth : MonoBehaviour {
 		currentHealth -= damage;
 		healthSlider.value = currentHealth;
 		damaged = true;
+		//anim.SetBool ("Damaged", damaged);
 		//Debug.Log ("CurrentHealth =" + currentHealth);
 
 		if (currentHealth <= 0)

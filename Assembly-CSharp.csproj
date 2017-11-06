@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BFB867E1-72EF-F84F-970F-74039B46A682}</ProjectGuid>
+    <ProjectGuid>{19C69FE8-9395-1902-9836-D9478068772A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -66,6 +66,8 @@
      <Compile Include="Assets\External\GhostSprites2D\Scripts\GhostSprites\GhostSprites.cs" />
      <Compile Include="Assets\HealthPickup.cs" />
      <Compile Include="Assets\PlayerHealth.cs" />
+     <Compile Include="Assets\shootSpore.cs" />
+     <Compile Include="Assets\SporeController.cs" />
      <Compile Include="Assets\Sprites\GhostSprites\GhostSpritesCustom.cs" />
      <None Include="Assets\External\Knight Files\Read Me.txt" />
      <None Include="Assets\External\GhostSprites2D\README.txt" />

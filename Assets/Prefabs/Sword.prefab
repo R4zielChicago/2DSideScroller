@@ -84,7 +84,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillDamage: 0
-  attackDamage: 0
   explosionEffect: {fileID: 0}
 --- !u!114 &114489258930891568
 MonoBehaviour:
@@ -97,6 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d53976c880dc949179b6ec8efdc64408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 0}
+  swordDamage: 0
 --- !u!114 &114962771134210016
 MonoBehaviour:
   m_ObjectHideFlags: 1
